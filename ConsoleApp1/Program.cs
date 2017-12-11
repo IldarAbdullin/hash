@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using System.IO;
@@ -10,9 +6,9 @@ using System.Configuration;
 
 namespace ConsoleApp1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             byte[] text = File.ReadAllBytes(@"5_9.cpp");
             File.WriteAllBytes(@"5_9.cpp", text);
@@ -51,7 +47,6 @@ namespace ConsoleApp1
                 Console.WriteLine("Elapsed Time (ms): {0}\n", sw.ElapsedMilliseconds);
                 Console.ReadKey();
             }
-
         }
     }
 }
